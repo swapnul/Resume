@@ -53,23 +53,12 @@
 
         /* List Styles */
         ul {
-            list-style: none;
-            padding: 0;
+            list-style-type: disc; /* Change to bullet points */
+            padding-left: 20px;
         }
 
         ul li {
             margin: 5px 0;
-            position: relative;
-            padding-left: 25px;
-        }
-
-        ul li::before {
-            content: '✔';
-            position: absolute;
-            left: 0;
-            color: #16a085;
-            font-size: 16px;
-            line-height: 18px;
         }
 
         /* Subheading Styles */
@@ -92,6 +81,31 @@
         /* Footer and Other Elements */
         p {
             margin: 10px 0;
+        }
+
+        /* Desktop-Specific Styles */
+        @media (min-width: 1024px) {
+            header {
+                padding: 40px;
+                font-size: 1.5em;
+            }
+
+            section {
+                max-width: 1000px;
+                padding: 30px;
+            }
+
+            .section-title {
+                font-size: 24px;
+            }
+
+            ul li {
+                font-size: 1.2em;
+            }
+
+            body {
+                font-size: 18px;
+            }
         }
     </style>
 </head>
